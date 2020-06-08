@@ -1,0 +1,52 @@
+{
+  "name": "Readit",
+  "version": "1.0.0",
+  "description": "Master Electron Project",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec 'electron .'",
+    "reset": "git reset --hard",
+    "build": "electron-builder --help"
+  },
+  "repository": "https://github.com/stackacademytv/master-electron",
+  "keywords": [
+    "Electron",
+    "Master Electron",
+    "demo"
+  ],
+  "author": "Luiz Fonseca",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^5.0.0",
+    "nodemon": "^1.18.9",
+    "@polymer/lit-element": "^0.5.2",
+    "@polymer/polymer": "^3.0.0",
+    "browser-sync": "^2.24.6",
+    "concurrently": "^3.6.1",
+    "lodash": "^4.17.15",
+    "@polymer/iron-demo-helpers": "^3.1.0",
+    "@polymer/test-fixture": "^4.0.2",
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "wct-mocha": "^1.0.1"
+  },
+  "dependencies": {
+    "electron-window-state": "^5.0.3"
+  },
+  "build": {
+    "appId": "com.stackacademytv.readit",
+    "copyright": "Copyright 2020",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": "dmg"
+    },
+    "win": {
+      "target": "zip"
+    },
+    "linux": {
+      "category": "Utility"
+    }
+  }
+}
